@@ -1,6 +1,23 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 function RuneWord(props) {
+
+    // const img = "../img/tal.png"
+    // const tal = require(`"${img}"`).default;
+    // console.log(tal);
+
+    // useEffect(() => {
+    //     props.picturies.map(item => {
+    //         const i = require(item).default;
+    //         console.log(i);
+    //     })
+    // }, [])
+
+    const getImg = (src) => {
+        //console.log(require("" + src));
+        return ""
+    }
 
     const show = (fav, pr) => {
         if (fav && pr) {
@@ -17,10 +34,10 @@ function RuneWord(props) {
         <div className={show(props.favoriteOn, props.favorite) && props.filter ? "runeword-block-wrapper" : "hidden"}>
             <div className="runeword__favorites" data-id={props.id}>
                 <div className={!props.favorite ? "runeword__favorites-btn runeword__favorites-add" : "hidden"}>
-                    <img src="../img/icons/add-fav.svg" alt="" title="Добавить в избранное" />
+                    <img src={require("../img/icons/add-fav.svg").default} alt="" title="Добавить в избранное" />
                 </div>
                 <div className={props.favorite ? "runeword__favorites-btn runeword__favorites-remove" : "hidden"}>
-                    <img src="../img/icons/remove-fav.svg" alt="" title="Удалить из избранного" />
+                    <img src={require('../img/icons/remove-fav.svg').default} alt="" title="Удалить из избранного" />
                 </div>
             </div>
             <div className="runeword__left">
@@ -35,7 +52,7 @@ function RuneWord(props) {
                 <ul className="runeword__recept">
                     {props.picturies.map((item, i) =>
                         <li className="runeword__recept-item" key={i}>
-                            <img src={item} alt="" className="runeword__recept-img" />
+                            <img src={item.default} alt="" className="runeword__recept-img" />
                             <p className="runeword__recept-name">{props.receptNames[i]}</p>
                         </li>)}
                 </ul>

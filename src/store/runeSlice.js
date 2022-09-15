@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import runeArr from '../data/runes.json';
+import runeArr from '../data/runes';
 
 export const runeSlice = createSlice({
     name: 'runes',

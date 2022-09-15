@@ -1,9 +1,9 @@
-[
+const runes = [
     {
         "id": 0,
         "nameEn": "El",
         "nameRus": "Эл",
-        "img": "../img/el.png",
+        "img": require("../img/el.png"),
         "recept": {
             "first": true,
             "countPred": 0,
@@ -20,7 +20,7 @@
         "id": 1,
         "nameEn": "Eld",
         "nameRus": "Элд",
-        "img": "../img/eld.png",
+        "img": require("../img/eld.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -37,7 +37,7 @@
         "id": 2,
         "nameEn": "Tir",
         "nameRus": "Тир",
-        "img": "../img/tir.png",
+        "img": require("../img/tir.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -54,7 +54,7 @@
         "id": 3,
         "nameEn": "Nef",
         "nameRus": "Неф",
-        "img": "../img/nef.png",
+        "img": require("../img/nef.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -71,7 +71,7 @@
         "id": 4,
         "nameEn": "Eth",
         "nameRus": "Эт",
-        "img": "../img/et.png",
+        "img": require("../img/et.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -88,7 +88,7 @@
         "id": 5,
         "nameEn": "Ith",
         "nameRus": "Ит",
-        "img": "../img/it.png",
+        "img": require("../img/it.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -105,7 +105,7 @@
         "id": 6,
         "nameEn": "Tal",
         "nameRus": "Тал",
-        "img": "../img/tal.png",
+        "img": require("../img/tal.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -122,7 +122,7 @@
         "id": 7,
         "nameEn": "Ral",
         "nameRus": "Рал",
-        "img": "../img/ral.png",
+        "img": require("../img/ral.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -139,7 +139,7 @@
         "id": 8,
         "nameEn": "Ort",
         "nameRus": "Орт",
-        "img": "../img/ort.png",
+        "img": require("../img/ort.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -156,7 +156,7 @@
         "id": 9,
         "nameEn": "Thul",
         "nameRus": "Тул",
-        "img": "../img/tul.png",
+        "img": require("../img/tul.png"),
         "recept": {
             "first": false,
             "countPred": 3,
@@ -173,13 +173,13 @@
         "id": 10,
         "nameEn": "Amn",
         "nameRus": "Амн",
-        "img": "../img/amn.png",
+        "img": require("../img/amn.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "надколотый топаз",
-            "img": "../img/gem/nt.png"
+            "img": require("../img/gem/nt.png")
         },
         "effects": {
             "weapon": "Похищает 7% здоровья за удар",
@@ -192,13 +192,13 @@
         "id": 11,
         "nameEn": "Sol",
         "nameRus": "Сол",
-        "img": "../img/sol.png",
+        "img": require("../img/sol.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "надколотый аметист",
-            "img": "../img/gem/na.png"
+            "img": require("../img/gem/na.png")
         },
         "effects": {
             "weapon": "+9 к минимальному урону",
@@ -211,13 +211,13 @@
         "id": 12,
         "nameEn": "Shael",
         "nameRus": "Шаэл",
-        "img": "../img/shael.png",
+        "img": require("../img/shael.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "надколотый сапфир",
-            "img": "../img/gem/ns.png"
+            "img": require("../img/gem/ns.png")
         },
         "effects": {
             "weapon": "+20% к скорости атаки",
@@ -230,13 +230,13 @@
         "id": 13,
         "nameEn": "Dol",
         "nameRus": "Дол",
-        "img": "../img/dol.png",
+        "img": require("../img/dol.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "надколотый рубин",
-            "img": "../img/gem/nr.png"
+            "img": require("../img/gem/nr.png")
         },
         "effects": {
             "weapon": "Вероятность 25% обратить монстра в бегство при ударе",
@@ -249,13 +249,13 @@
         "id": 14,
         "nameEn": "Hel",
         "nameRus": "Хел",
-        "img": "../img/hel.png",
+        "img": require("../img/hel.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "надколотый изумруд",
-            "img": "../img/gem/ni.png"
+            "img": require("../img/gem/ni.png")
         },
         "effects": {
             "weapon": "Требования -20%",
@@ -268,13 +268,13 @@
         "id": 15,
         "nameEn": "Io",
         "nameRus": "Ио",
-        "img": "../img/io.png",
+        "img": require("../img/io.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "надколотый алмаз",
-            "img": "../img/gem/nal.png"
+            "img": require("../img/gem/nal.png")
         },
         "effects": {
             "weapon": "+10 к живучести",
@@ -287,13 +287,13 @@
         "id": 16,
         "nameEn": "Lum",
         "nameRus": "Лум",
-        "img": "../img/lum.png",
+        "img": require("../img/lum.png"),
         "recept": {
             "first": false,
             "countPred": 1,
             "dop": true,
             "name": "мутный топаз",
-            "img": "../img/gem/mt.png"
+            "img": require("../img/gem/mt.png")
         },
         "effects": {
             "weapon": "+10 к энергии",
@@ -306,13 +306,13 @@
         "id": 17,
         "nameEn": "Ko",
         "nameRus": "Ко",
-        "img": "../img/ko.png",
+        "img": require("../img/ko.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "мутный аметист",
-            "img": "../img/gem/ma.png"
+            "img": require("../img/gem/ma.png")
         },
         "effects": {
             "weapon": "+10 к ловкости",
@@ -325,13 +325,13 @@
         "id": 18,
         "nameEn": "fal",
         "nameRus": "Фал",
-        "img": "../img/fal.png",
+        "img": require("../img/fal.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "мутный сапфир",
-            "img": "../img/gem/ma.png"
+            "img": require("../img/gem/ma.png")
         },
         "effects": {
             "weapon": "+10 к силе",
@@ -344,13 +344,13 @@
         "id": 19,
         "nameEn": "Lem",
         "nameRus": "Лем",
-        "img": "../img/lem.png",
+        "img": require("../img/lem.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "мутный рубин",
-            "img": "../img/gem/mr.png"
+            "img": require("../img/gem/mr.png")
         },
         "effects": {
             "weapon": "+75% к золоту за убийство монстров",
@@ -363,13 +363,13 @@
         "id": 20,
         "nameEn": "Pul",
         "nameRus": "Пул",
-        "img": "../img/pul.png",
+        "img": require("../img/pul.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "мутный изумруд",
-            "img": "../img/gem/mi.png"
+            "img": require("../img/gem/mi.png")
         },
         "effects": {
             "weapon": "+75% урона по демонам, +100 к рейтингу атаки против демонов",
@@ -382,13 +382,13 @@
         "id": 21,
         "nameEn": "Um",
         "nameRus": "Ум",
-        "img": "../img/ym.png",
+        "img": require("../img/ym.png"),
         "recept": {
             "first": false,
             "countPred": 3,
             "dop": true,
             "name": "мутный алмаз",
-            "img": "../img/gem/mal.png"
+            "img": require("../img/gem/mal.png")
         },
         "effects": {
             "weapon": "Вероятность 25% нанести открытую рану",
@@ -401,13 +401,13 @@
         "id": 22,
         "nameEn": "Mal",
         "nameRus": "Мал",
-        "img": "../img/mal.png",
+        "img": require("../img/mal.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "топаз",
-            "img": "../img/gem/t.png"
+            "img": require("../img/gem/t.png")
         },
         "effects": {
             "weapon": "Запрещает монстрам лечиться",
@@ -420,13 +420,13 @@
         "id": 23,
         "nameEn": "Ist",
         "nameRus": "Ист",
-        "img": "../img/ist.png",
+        "img": require("../img/ist.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "аметист",
-            "img": "../img/gem/a.png"
+            "img": require("../img/gem/a.png")
         },
         "effects": {
             "weapon": "+30% к вероятности найти магический предмет",
@@ -439,13 +439,13 @@
         "id": 24,
         "nameEn": "Gul",
         "nameRus": "Гул",
-        "img": "../img/gul.png",
+        "img": require("../img/gul.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "сапфир",
-            "img": "../img/gem/s.png"
+            "img": require("../img/gem/s.png")
         },
         "effects": {
             "weapon": "+20% к рейтингу атаки",
@@ -458,13 +458,13 @@
         "id": 25,
         "nameEn": "Vex",
         "nameRus": "Векс",
-        "img": "../img/vex.png",
+        "img": require("../img/vex.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "рубин",
-            "img": "../img/gem/r.png"
+            "img": require("../img/gem/r.png")
         },
         "effects": {
             "weapon": "Похищает 7% маны за удар",
@@ -477,13 +477,13 @@
         "id": 26,
         "nameEn": "Ohm",
         "nameRus": "Ом",
-        "img": "../img/om.png",
+        "img": require("../img/om.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "изумруд",
-            "img": "../img/gem/i.png"
+            "img": require("../img/gem/i.png")
         },
         "effects": {
             "weapon": "+50% к урону",
@@ -496,13 +496,13 @@
         "id": 27,
         "nameEn": "Lo",
         "nameRus": "Ло",
-        "img": "../img/lo.png",
+        "img": require("../img/lo.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "алмаз",
-            "img": "../img/gem/a.png"
+            "img": require("../img/gem/a.png")
         },
         "effects": {
             "weapon": "Вероятность 20% нанести смертельный удар",
@@ -515,13 +515,13 @@
         "id": 28,
         "nameEn": "Sur",
         "nameRus": "Сур",
-        "img": "../img/sur.png",
+        "img": require("../img/sur.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "безупречный топаз",
-            "img": "../img/gem/bt.png"
+            "img": require("../img/gem/bt.png")
         },
         "effects": {
             "weapon": "При ударе ослепляет цель",
@@ -534,13 +534,13 @@
         "id": 29,
         "nameEn": "Ber",
         "nameRus": "Бер",
-        "img": "../img/ber.png",
+        "img": require("../img/ber.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "безупречный аметист",
-            "img": "../img/gem/ba.png"
+            "img": require("../img/gem/ba.png")
         },
         "effects": {
             "weapon": "Вероятность 20% нанести сокрушительный удар",
@@ -553,13 +553,13 @@
         "id": 30,
         "nameEn": "Jah",
         "nameRus": "Жа",
-        "img": "../img/jah.png",
+        "img": require("../img/jah.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "безупречный сапфир",
-            "img": "../img/gem/bs.png"
+            "img": require("../img/gem/bs.png")
         },
         "effects": {
             "weapon": "Игнорирует защиту цели",
@@ -572,13 +572,13 @@
         "id": 31,
         "nameEn": "Cham",
         "nameRus": "Чам",
-        "img": "../img/cham.png",
+        "img": require("../img/cham.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "безупречный рубин",
-            "img": "../img/gem/br.png"
+            "img": require("../img/gem/br.png")
         },
         "effects": {
             "weapon": "Замораживает цель +3",
@@ -591,13 +591,13 @@
         "id": 32,
         "nameEn": "Zod",
         "nameRus": "Зод",
-        "img": "../img/zod.png",
+        "img": require("../img/zod.png"),
         "recept": {
             "first": false,
             "countPred": 2,
             "dop": true,
             "name": "мутный изумруд",
-            "img": "../img/gem/mi.png"
+            "img": require("../img/gem/mi.png")
         },
         "effects": {
             "weapon": "Не теряет прочности",
@@ -607,3 +607,5 @@
         }
     }
 ]
+
+export default runes

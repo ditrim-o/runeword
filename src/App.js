@@ -3,21 +3,20 @@ import Main from './components/Main';
 import Experiment from './components/Experiment';
 import RuneWordsList from './containers/RuneWordsList';
 import FilterList from './containers/FilterList';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter, BrowserRouter } from "react-router-dom";
+import FilmsList from './containers/FilmsList';
 
 function App() {
 
   return (
     <>
-      <Router>
+      <BrowserRouter>
 
         <Switch>
           <Route path="/exp">
             <Experiment />
           </Route>
-          <Route exact path="/">
-            <Main />
-          </Route>
+
           <Route exact path="/rune">
             <div className="wrapper"></div>
             <div className="content-wrapper">
@@ -27,8 +26,14 @@ function App() {
               <RuneWordsList />
             </div>
           </Route>
+          <Route exact path="/films">
+            <FilmsList />
+          </Route>
+          <Route exact path="*">
+            <Main />
+          </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }

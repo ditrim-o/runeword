@@ -6,9 +6,13 @@ export default function Main() {
 
 
             <div className="main-wrapper">
-                <img src="/img/site/logo.svg" alt="" className="main__logo" />
+                <img src={require('../img/site/logo.svg').default} alt="" className="main__logo" />
                 <h1 className="main__header">Ditrim Technologies</h1>
-                <Link className="button" to="/rune">DIABLO II RUNEWORDS FINDER</Link>
+                <div className="main__links">
+                    <Link className="button" to="/rune">DIABLO II RUNEWORDS FINDER</Link>
+                    <Link className="button" to="/films">FILMS</Link>
+                </div>
+
             </div>
         </>
     )
